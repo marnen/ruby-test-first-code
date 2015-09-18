@@ -1,4 +1,5 @@
 require 'minitest/autorun'
+require './hello.rb'
 
 describe 'Hello World', :hello do
   it 'prints "Hello World!"' do
