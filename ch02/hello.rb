@@ -1,3 +1,3 @@
 def hello(name)
-  puts "Hello World!"
+  puts "Hello, #{name}!"
 end
