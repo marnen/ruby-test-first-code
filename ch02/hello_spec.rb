@@ -2,7 +2,8 @@ require 'minitest/autorun'
 require './hello.rb'
 
 describe 'Hello World', :hello do
-  it 'prints "Hello World!"' do
-    proc { hello }.must_output "Hello World!\n"
+  it 'prints "Hello" followed by the given name' do
+    name = "User #{rand 1..10}"
+    proc { hello(name) }.must_output "Hello, #{name}!\n"
   end
 end
